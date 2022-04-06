@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@color/background" android:weightSum="3"
+              android:id="@+id/lnr_sti_main">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:id="@+id/lnr_sti_header" android:weightSum="2" android:background="@color/head_bg_color">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/btn_sti_back" android:background="@drawable/icon_back"
+                android:textColor="@color/main_btn_text_color"
+                android:layout_gravity="center"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings-Import"
+                android:id="@+id/txt_sth_head"
+                android:textStyle="bold" android:textSize="25dp" android:clickable="false"
+                android:editable="false" android:inputType="date" android:layout_weight="1"
+                android:textColor="@color/head_text_color" android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="400dp" android:layout_gravity="center"
+            android:id="@+id/lnr_sti_content" android:weightSum="2"
+            android:gravity="center_vertical|center_horizontal" android:layout_weight="1.79">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="Select target table"
+                  android:id="@+id/txt_sti_p1" android:gravity="center|center_vertical|left"
+                  android:layout_gravity="center"
+                  android:textColor="@color/lbl_txt_color" android:textSize="24dp" android:layout_marginBottom="20dp"/>
+        <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:id="@+id/sp_sti_tables" android:layout_gravity="center" android:gravity="center"
+                android:spinnerMode="dropdown"
+                android:clickable="true" android:background="@drawable/dropdown_style" android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+        <Button
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:text="Choose File"
+            android:id="@+id/btn_sti_choose_file"
+            android:textSize="20dp"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.13"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Data import success!   200 records imported"
+                android:id="@+id/txt_sti_success_message" android:layout_gravity="center"
+                android:visibility="invisible" android:layout_marginTop="20dp" android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" android:textColor="@color/lbl_txt_color" android:textSize="20dp"
+                android:gravity="center_vertical|center_horizontal"/>
+        <Button android:layout_width="500dp" android:layout_height="70dp" android:text="Import"
+                android:id="@+id/btn_sti_import"
+                android:textSize="20dp" android:background="@drawable/button_selector"
+                android:gravity="center" android:layout_marginLeft="40dp" android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp" android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/lnr_sti_footer"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" android:layout_gravity="center_horizontal" android:weightSum="2"
+            android:layout_weight="1" android:gravity="bottom">
+        <!--<Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Done"-->
+                <!--android:id="@+id/btn_sti_done" android:layout_marginTop="15dp" android:textSize="20dp"-->
+                <!--android:background="@drawable/button_selector" android:layout_weight="2.04"-->
+                <!--android:visibility="visible"/>-->
+    </LinearLayout>
+</LinearLayout>

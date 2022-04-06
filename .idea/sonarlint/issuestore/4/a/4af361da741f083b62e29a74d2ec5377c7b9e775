@@ -1,0 +1,13 @@
+
+_squid:S3027"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(ÏÜ
+Vsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(œ£â‚
+Dsquid:S1066"/Merge this if statement with the enclosing one.(ÑóŠß
+Dsquid:S1066"/Merge this if statement with the enclosing one.(±ÕçÃ
+psquid:S1450"[Remove the "fileSelected" field and declare it as a local variable in the relevant methods.(¡ÿÏè
+_squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¬“„>
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ï¼ÓÄüÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ûŠ”¾ûÿÿÿÿ
+Lsquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+?squid:S00108")Either remove or fill this block of code.(”ı¾
+Tsquid:S1161":Add the "@Override" annotation above this method signature(¿£ú½ùÿÿÿÿ
+hsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(¡²ûĞÿÿÿÿÿ

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:id="@+id/lnr_osr_main"
+              android:layout_height="match_parent" android:weightSum="1"
+              android:textAlignment="center" android:background="@color/background" android:visibility="visible">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:id="@+id/lnr_osr_header" android:weightSum="2" android:background="@color/head_bg_color"
+            android:padding="10dp" android:layout_weight="0.02">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/btn_osr_back" android:background="@drawable/icon_back"
+                android:textColor="@color/lbl_txt_color"
+                android:layout_gravity="center"/>
+        <Button android:layout_width="33dp" android:layout_height="33dp" android:id="@+id/btn_os_logo"
+                android:background="@drawable/icon_cart" android:textColor="@color/main_btn_text_color"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW ORDERS"
+                android:id="@+id/txt_osr_head"
+                android:textStyle="bold" android:textSize="20sp" android:clickable="false"
+                android:editable="false" android:inputType="date" android:layout_weight="0.01"
+                android:textColor="@color/head_text_color" android:layout_marginTop="0dp"
+                android:layout_marginLeft="0dp" android:layout_marginRight="15dp" android:layout_marginBottom="0dp"
+                android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="From"
+              android:id="@+id/txt_osr_from"
+              android:gravity="center" android:layout_marginLeft="22dp" android:textSize="18dp"
+              android:textColor="@color/lbl_txt_color" android:layout_marginTop="20dp" android:visibility="invisible"/>
+    <EditText android:layout_width="fill_parent" android:layout_height="50dp"
+              android:id="@+id/edt_osr_from" android:background="@android:drawable/edit_text" android:hint="From (YYYY/MM/DD)"
+              android:enabled="true" android:focusable="true" android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp" android:textColor="@color/txt_text_color"
+              android:focusableInTouchMode="true" android:editable="false" android:visibility="visible"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="To"
+              android:id="@+id/txt_osr_to"
+              android:gravity="center" android:autoText="true" android:layout_marginLeft="22dp"
+              android:textSize="18dp" android:textColor="@color/lbl_txt_color" android:visibility="invisible"/>
+    <EditText android:layout_width="fill_parent" android:layout_height="50dp"
+              android:id="@+id/edt_osr_to" android:background="@android:drawable/edit_text" android:hint="To (YYYY/MM/DD)"
+              android:enabled="true" android:focusable="true" android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp" android:textColor="@color/txt_text_color"
+              android:focusableInTouchMode="true" android:editable="false" android:visibility="visible"/>
+    <Button
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:text="View"
+            android:id="@+id/btn_osr_search" android:layout_gravity="center_horizontal" android:layout_marginTop="15dp"
+            android:textSize="20dp" android:textColor="@android:color/white"
+            android:background="@drawable/button_selector"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:id="@+id/txt_osr_sec2" android:layout_gravity="center_horizontal" android:layout_marginTop="20dp"
+            android:textSize="30dp" android:textColor="@color/lbl_txt_color"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="View order based on customer"
+              android:id="@+id/txt_osr_sec3" android:layout_gravity="center_horizontal" android:layout_marginTop="15dp"
+              android:textStyle="bold" android:textSize="25dp" android:clickable="false" android:editable="false"
+              android:inputType="date" android:textColor="@color/lbl_txt_color"/>
+    <Button android:layout_width="350dp" android:layout_height="50dp" android:text="Select a customer"
+            android:id="@+id/btn_osr_choose" android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp" android:textSize="20dp" android:background="@drawable/button_selector"
+            android:textColor="@android:color/white"/>
+</LinearLayout>

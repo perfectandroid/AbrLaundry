@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ABR Laundry</string>
+    <string-array name="price_change_list">
+        <item>No change</item>
+        <item>Flexible</item>
+        <item>Greater/Equal to price</item>
+    </string-array>
+
+    <string-array name="settlement_status">
+        <item>Paid</item>
+        <item>Pending</item>
+
+    </string-array>
+    <string-array name="service_type_list">
+        <item>Please choose a service</item>
+        <item>Dry Clean</item>
+        <item>Wash &amp; Fold</item>,
+        <item>Ironing</item>
+        <item>Normal</item>
+    </string-array>
+    <string-array name="item_list">
+        <item>Please Choose an item</item>
+        <item>Shirt</item>
+        <item>Pants</item>,
+        <item>Trousers</item>
+        <item>Carpets</item>
+    </string-array>
+
+    <string-array name="table_list">
+    </string-array>
+    <string-array name="import_table_list">
+        <item>Please choose a table to import</item>
+        <item>Area</item>
+        <item>Building</item>
+        <item>Price</item>
+        <item>Customer</item>
+    </string-array>
+    <string-array name="export_table_list">
+        <item>Please choose a table to Export</item>
+        <item>Order</item>
+        <item>Order Details</item>
+        <item>Customer</item>
+    </string-array>
+    <string-array name="order_cart_item_menu">
+        <item>Reset Price</item>
+        <item>Cancel</item>
+    </string-array>
+</resources>

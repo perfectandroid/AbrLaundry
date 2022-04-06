@@ -1,0 +1,12 @@
+
+[squid:S1075"ARefactor your code to get this URI from a customizable parameter.(ÚÐ‘Ìøÿÿÿÿ
+hsquid:S2095"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(â½§Öúÿÿÿÿ
+bsquid:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(£«øÍ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÂÌè¬
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(†›°¾üÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(þ‚’ßøÿÿÿÿ
+Asquid:S1481"'Remove this unused "sd" local variable.(µíßÚúÿÿÿÿ
+Ksquid:S1481"1Remove this unused "backupDBPath" local variable.(ëÿÚþÿÿÿÿ
+Psquid:S1854"6Remove this useless assignment to local variable "sd".(µíßÚúÿÿÿÿ
+Zsquid:S1854"@Remove this useless assignment to local variable "backupDBPath".(ëÿÚþÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

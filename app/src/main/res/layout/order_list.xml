@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@drawable/login" android:weightSum="1"
+              android:id="@+id/lnr_ol_main">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center"
+            android:id="@+id/lnr_ol_header" android:weightSum="1" android:background="@color/head_bg_color"
+            android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp"
+            android:paddingBottom="15dp">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/btn_ol_back" android:background="@drawable/icon_back"
+                android:textColor="@color/main_btn_text_color" android:layout_gravity="center"
+                android:padding="10dp" android:clickable="true"/>
+        <Button android:layout_width="33dp" android:layout_height="33dp" android:id="@+id/btn_ol_logo"
+                android:background="@drawable/icon_cart" android:textColor="@color/main_btn_text_color"
+                android:layout_gravity="center"
+                android:padding="10dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDERS"
+                android:id="@+id/txt_ol_head"
+                android:textStyle="bold" android:textSize="25sp"
+                android:clickable="false"
+                android:editable="false" android:inputType="date" android:textColor="@color/head_text_color"
+                android:layout_gravity="center" android:padding="10dp" android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" android:background="@color/background"
+            android:id="@+id/lnr_ol_container" android:paddingTop="50dp" android:paddingBottom="20dp">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/list_head_bg_color" android:weightSum="5" android:gravity="center"
+                android:id="@+id/lnr_ol_list_head">
+            <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_ol_order_no" android:layout_weight="1" android:hint="Order No"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:gravity="center" android:textColor="@color/list_head_text_color"/>
+            <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_ol_date" android:layout_weight="1" android:hint="Date"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/list_head_text_color" android:textAlignment="center"
+                    android:layout_gravity="center" android:gravity="center|center_horizontal"
+                    />
+            <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+                    android:id="@+id/txt_ol_customer" android:layout_weight="1" android:hint="Customer"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/list_head_text_color" android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+            <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_ol_total" android:layout_weight="1" android:hint="Total"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/list_head_text_color" android:textAlignment="center"
+                    android:layout_gravity="center" android:gravity="center"
+                    />
+            <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:id="@+id/txt_ol_status"
+                      android:layout_weight="1" android:hint="Status" android:layout_marginTop="5dp"
+                      android:textColor="@color/list_head_text_color" android:textAlignment="center"
+                      android:layout_gravity="center"
+                      android:gravity="center" android:visibility="gone"/>
+            <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="60dp"
+                    android:layout_height="41dp"
+                    android:text="X"
+                    android:maxWidth="39dp" android:hint="Remove" android:layout_marginTop="5dp"
+                    android:minWidth="39dp" android:layout_marginRight="5dp" android:visibility="invisible"/>
+        </LinearLayout>
+        <TextView android:layout_width="368dp" android:layout_height="wrap_content"
+                  android:text="No Order found !" android:id="@+id/txt_ol_empty_message"
+                  android:layout_gravity="center" android:textSize="20dp"
+                  android:textColor="@color/lbl_txt_color" android:layout_marginTop="10dp"
+                  android:visibility="visible" android:textAlignment="center" android:gravity="center_vertical|center_horizontal"/>
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="311dp"
+                android:id="@+id/list_ol_orders" android:layout_weight="0.65"/>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="50dp" android:layout_marginTop="10dp"
+                      android:gravity="right" android:id="@+id/linear_ol_total">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="TOTAL: " android:textStyle="bold"
+                      android:layout_marginLeft="25dp" android:textColor="#ff454545"
+                      android:gravity="center_vertical|center_horizontal" android:textSize="22dp"/>
+            <TextView android:layout_width="wrap_content" android:id="@+id/txt_ol_TotalAmt" android:layout_height="fill_parent" android:textStyle="bold"
+                      android:layout_marginLeft="15dp" android:textColor="#ffff666f" android:textSize="22dp"
+                      android:layout_marginRight="30dp" android:text="0" android:gravity="center_vertical|center_horizontal"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

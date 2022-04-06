@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#fff6fcff" android:weightSum="5" android:gravity="center">
+    <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_oci_type" android:layout_weight="1" android:hint="Type"
+            android:layout_marginTop="5dp" android:textColor="#ff010001"
+            android:textAlignment="center"
+            android:gravity="center"/>
+    <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_oci_item" android:layout_weight="1" android:hint="Item" android:layout_marginTop="5dp"
+            android:textColor="#ff010001" android:textAlignment="center"
+            android:layout_gravity="center" android:gravity="center|center_horizontal"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edt_oci_qty" android:layout_weight="1" android:hint="Qty"
+            android:layout_marginTop="5dp"
+            android:textColor="#ff010001" android:textAlignment="center" android:layout_gravity="center"
+            android:gravity="center" android:minWidth="50dp" android:maxLength="8" android:maxWidth="100dp"
+            android:editable="false" android:clickable="false" android:enabled="false"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/txt_oci_unit_price"
+              android:layout_weight="1" android:hint="Unit Price" android:layout_marginTop="5dp"
+              android:textColor="#ff010001" android:textAlignment="center" android:layout_gravity="center"
+              android:gravity="center" android:minWidth="150dp" android:maxWidth="155dp"
+              android:numeric="integer|decimal" android:editable="false" android:enabled="false"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_oci_price" android:layout_weight="1" android:hint="Price"
+            android:layout_marginTop="5dp"
+            android:textColor="#ff010001" android:textAlignment="center"
+            android:layout_gravity="center" android:gravity="center" android:minWidth="150dp" android:maxWidth="155dp"
+            android:numeric="integer|decimal" android:editable="false" android:clickable="false"
+            android:focusable="false"/>
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="39dp"
+            android:layout_height="41dp"
+            android:text="X"
+
+
+            android:id="@+id/btn_oci_remove" android:maxWidth="39dp" android:hint="Remove"
+            android:layout_marginTop="5dp"
+            android:minWidth="39dp" android:layout_marginRight="5dp"/>
+</LinearLayout>

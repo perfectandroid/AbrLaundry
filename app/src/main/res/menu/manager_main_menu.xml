@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_settigs" android:title="Import/Export" android:showAsAction="collapseActionView"/>
+    <item android:id="@+id/menu_clear_orders" android:title="Clear Orders" android:showAsAction="collapseActionView"/>
+    <item android:id="@+id/change_password"
+          android:title="Change Password"
+          android:showAsAction="collapseActionView"/>
+    <item android:id="@+id/export_db" android:title="Export Database" android:showAsAction="collapseActionView"/>
+    <item android:id="@+id/menu_logout" android:title="Logout" android:showAsAction="collapseActionView"/>
+</menu>

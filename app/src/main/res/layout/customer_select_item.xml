@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:weightSum="3"
+        android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:showDividers="beginning|middle|end"
+        android:paddingTop="5dp" android:paddingBottom="5dp" android:id="@+id/lnr_csi_main"
+        android:background="@color/stroke_white">
+    <Button
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+
+            android:background="@drawable/icon_customer" android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    <LinearLayout
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_gravity="center" android:layout_weight="1.80">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_csi_name" android:layout_weight="1" android:layout_marginLeft="5dp"
+                android:hint="Name" android:textColor="@color/lbl_txt_color" android:layout_gravity="center|left"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/txt_csi_mobile" android:layout_weight="1" android:layout_marginLeft="5dp"
+                  android:hint="Mobile" android:textColor="@color/lbl_txt_color" android:layout_gravity="center|left"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_csi_address1" android:layout_weight="1" android:layout_marginLeft="5dp"
+                android:hint="Address 1" android:textColor="@color/lbl_txt_color" android:layout_gravity="center|left"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_csi_address2" android:layout_weight="1" android:layout_marginLeft="5dp"
+                android:hint="Address 2" android:textColor="@color/lbl_txt_color"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/txt_csi_area" android:layout_weight="1" android:layout_marginLeft="5dp"
+                  android:hint="Area" android:textColor="@color/lbl_txt_color" android:layout_gravity="center|left"/>
+    </LinearLayout>
+    <Button
+            android:layout_width="47dp"
+            android:layout_height="39dp"
+            android:id="@+id/btn_csi_order"
+            android:background="@drawable/btn_buy" android:layout_gravity="center_vertical"
+            android:singleLine="true"/>
+</LinearLayout>

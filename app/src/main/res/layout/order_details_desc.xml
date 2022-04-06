@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" android:weightSum="2"
+    android:id="@+id/lnr_odd_main">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" android:layout_gravity="center_horizontal"
+            android:id="@+id/lnr_odd_header" android:weightSum="2" android:background="@color/head_bg_color">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/btn_odd_back" android:background="@drawable/icon_back"
+                android:textColor="@color/main_btn_text_color"
+                android:layout_gravity="center"/>
+        <Button android:layout_width="33dp" android:layout_height="33dp" android:id="@+id/button"
+                android:background="@drawable/icon_cart" android:textColor="@color/main_btn_text_color"
+                android:layout_gravity="center_vertical"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDER  DETAILS"
+                android:id="@+id/txt_odd_head"
+                android:textStyle="bold" android:textSize="25sp"
+                android:clickable="false"
+                android:editable="false" android:inputType="date" android:textColor="@color/head_text_color"
+                android:layout_gravity="center"/>
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:id="@+id/lnr_odd_container"
+            android:background="@color/background" android:paddingTop="15dp">
+
+        <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:paddingStart="50dp" android:paddingEnd="50dp"
+                android:layout_weight="0.03" android:showDividers="middle" android:paddingTop="5dp"
+                android:paddingBottom="5dp" android:paddingRight="15dp" android:paddingLeft="15dp">
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:weightSum="2" android:orientation="vertical"
+                    android:id="@+id/tblr_odd_oder_no">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Order No"
+                        android:layout_weight="1" android:id="@+id/txt_odd_oder_no"
+                        android:textColor="@color/lbl_txt_color"/>
+                <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/edt_odd_oder_no" android:layout_column="3" android:layout_weight="1"
+                        android:textColor="@color/txt_text_color" android:background="@android:drawable/edit_text"
+                        android:editable="false" android:hint="Order Number" android:focusable="false"
+                        android:enabled="false" android:focusableInTouchMode="false"/>
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2"
+                      android:id="@+id/tblr_odd_date" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="Date  Time"
+                          android:layout_weight="1" android:id="@+id/txt_odd_date"
+                          android:textColor="@color/lbl_txt_color"/>
+                <EditText android:layout_width="200dp" android:layout_height="40dp"
+                          android:id="@+id/edt_odd_date" android:layout_column="3" android:layout_weight="1"
+                          android:textColor="@color/txt_text_color" android:background="@android:drawable/edit_text"
+                          android:editable="false" android:hint="Customer Name " android:focusable="false"
+                          android:enabled="false" android:focusableInTouchMode="false"/>
+
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2"
+                      android:id="@+id/tblr_odd_customer" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="Customer"
+                          android:layout_weight="1" android:id="@+id/txt_odd_customer"
+                          android:textColor="@color/lbl_txt_color"/>
+                <EditText android:layout_width="200dp" android:layout_height="40dp"
+                          android:id="@+id/edt_odd_customer" android:layout_column="3" android:layout_weight="1"
+                          android:textColor="@color/txt_text_color" android:background="@android:drawable/edit_text"
+                          android:editable="false" android:hint="Customer Name " android:focusable="false"
+                          android:enabled="false" android:focusableInTouchMode="false"/>
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2"
+                      android:id="@+id/tblr_odd_toatal" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="Total Amount"
+                          android:layout_weight="1" android:id="@+id/txt_odd_toatal"
+                          android:textColor="@color/lbl_txt_color"/>
+                <EditText android:layout_width="200dp" android:layout_height="40dp"
+                          android:id="@+id/edt_odd_toatal" android:layout_column="3" android:layout_weight="1"
+                          android:textColor="@color/txt_text_color" android:background="@android:drawable/edit_text"
+                          android:editable="false" android:hint="Total" android:focusable="false"
+                          android:enabled="false" android:focusableInTouchMode="false"/>
+            </TableRow>
+            <!--vat amt-->
+            <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2"
+                android:id="@+id/tblr_odd_netamount" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="Net amount"
+                    android:layout_weight="1" android:id="@+id/txt_odd_netmount"
+                    android:textColor="@color/lbl_txt_color"/>
+                <EditText android:layout_width="200dp" android:layout_height="40dp"
+                    android:id="@+id/edt_odd_net_amount" android:layout_column="3" android:layout_weight="1"
+                    android:textColor="@color/txt_text_color" android:background="@android:drawable/edit_text"
+                    android:editable="false" android:hint="Net amount" android:focusable="false"
+                    android:enabled="false" android:focusableInTouchMode="false"/>
+            </TableRow>
+            <!---->
+            <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2"
+                      android:id="@+id/tblr_odd_additional" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="Addional"
+                          android:layout_weight="1" android:id="@+id/txt_odd_additional"
+                          android:textColor="@color/lbl_txt_color"/>
+                <EditText android:layout_width="200dp" android:layout_height="40dp"
+                          android:id="@+id/edt_odd_additional" android:layout_column="3" android:layout_weight="1"
+                          android:textColor="@color/txt_text_color" android:background="@android:drawable/edit_text"
+                          android:editable="false" android:hint="No Addional amount" android:focusable="false"
+                          android:enabled="false" android:focusableInTouchMode="false"/>
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2"
+                      android:id="@+id/tblr_odd_priority" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="Priority"
+                          android:layout_weight="1" android:id="@+id/txt_odd_priority"
+                          android:textColor="@color/lbl_txt_color"/>
+                <EditText android:layout_width="200dp" android:layout_height="40dp"
+                          android:id="@+id/edt_odd_priority" android:layout_column="3" android:layout_weight="1"
+                          android:textColor="@color/txt_text_color" android:background="@android:drawable/edit_text"
+                          android:editable="false" android:hint="Normal" android:focusable="false"
+                          android:enabled="false" android:focusableInTouchMode="false"/>
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2"
+                      android:id="@+id/tableRow" android:orientation="vertical" android:visibility="gone">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="Discount" android:layout_weight="1" android:id="@+id/txt_odd_discount"
+                          android:textColor="@color/lbl_txt_color"/>
+                <EditText android:layout_width="200dp" android:layout_height="40dp" android:id="@+id/edt_odd_discount"
+                          android:layout_column="3" android:layout_weight="1" android:textColor="@color/txt_text_color"
+                          android:background="@android:drawable/edit_text" android:editable="false"
+                          android:hint="No Discount" android:focusable="false" android:enabled="false"
+                          android:focusableInTouchMode="false"/>
+            </TableRow>
+            <TableRow android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2"
+                      android:id="@+id/tblr_odd_pay_status" android:orientation="vertical" android:visibility="gone">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:text="Payment Status"
+                          android:layout_weight="1" android:id="@+id/txt_odd_pay_status"
+                          android:textColor="@color/lbl_txt_color" android:visibility="visible"/>
+                <EditText android:layout_width="200dp" android:layout_height="40dp"
+                          android:id="@+id/edt_odd_pay_status"
+                          android:layout_column="3" android:layout_weight="1" android:textColor="@color/txt_text_color"
+                          android:background="@android:drawable/edit_text" android:visibility="visible"/>
+            </TableRow>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="250dp"
+                    android:layout_height="54dp" android:weightSum="3" android:layout_span="4"
+                    android:id="@+id/lnr_odd_order_status" android:visibility="invisible">
+                <TextView android:layout_width="235dp" android:layout_height="wrap_content"
+                          android:text="Payment Status" android:id="@+id/txt_odd_change_status"
+                          android:textColor="@color/lbl_txt_color" android:layout_gravity="center"/>
+                <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="39dp"
+                        android:id="@+id/sp_odd_change_status"
+                        android:spinnerMode="dropdown"
+                        android:background="@drawable/dropdown_style" android:layout_marginTop="10dp"
+                        android:layout_marginLeft="2dp" android:layout_marginBottom="20dp" android:clickable="true"/>
+                <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="39dp"
+                        android:text="Update"
+                        android:id="@+id/btn_odd_change_status" android:layout_column="20"
+                        android:background="@color/btn_bg_color" android:textColor="@color/btn_text_color"
+                        android:layout_marginTop="10dp" android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp" android:clickable="true"/>
+            </LinearLayout>
+        </TableLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp" xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/list_head_bg_color" android:weightSum="5" android:gravity="center"
+                android:id="@+id/lnr_odd_hitem">
+            <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_odd_itemh" android:layout_weight="1" android:hint="Order No"
+                    android:layout_marginTop="5dp" android:textColor="@color/list_head_text_color"
+                    android:textAlignment="center"
+                    android:gravity="center" android:text="Item Name" android:layout_marginBottom="5dp"
+                    android:textStyle="bold"/>
+            <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_odd_qtyh" android:layout_weight="1" android:hint="Date"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/list_head_text_color" android:textAlignment="center"
+                    android:layout_gravity="center_vertical" android:gravity="center|center_horizontal"
+                    android:layout_marginBottom="5dp" android:text="Quantity" android:textStyle="bold"/>
+            <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+                    android:id="@+id/txt_odd_serviceh" android:layout_weight="1" android:hint="Customer"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/list_head_text_color" android:textAlignment="center"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center" android:layout_marginBottom="5dp" android:text="Service Type"
+                    android:textStyle="bold"/>
+            <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_odd_hremark" android:layout_weight="1" android:hint="Total"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/list_head_text_color" android:textAlignment="center"
+                    android:layout_gravity="center_vertical" android:gravity="center" android:layout_marginBottom="5dp"
+                    android:text="Price" android:textStyle="bold"/>
+        </LinearLayout>
+        <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="301dp"
+                android:id="@+id/list_odd_order_items"/>
+        <LinearLayout android:id="@+id/lnr_odd_footer" android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:weightSum="2"
+                      android:layout_weight="1" android:visibility="visible" android:paddingRight="15dp"
+                      android:paddingLeft="15dp" android:paddingBottom="10dp" android:layout_gravity="bottom">
+            <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cancel Order"
+                    android:id="@+id/btn_oc_cancel_order" android:layout_marginTop="15dp" android:textSize="20sp"
+                    android:background="@drawable/button_selector" android:layout_weight="1"
+                    android:textColor="@color/btn_footer_text_color" android:paddingRight="15dp"
+                    android:layout_marginRight="15dp" android:visibility="invisible"/>
+            <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Print"
+                    android:id="@+id/btn_odd_print" android:layout_marginTop="15dp" android:textSize="20sp"
+                    android:background="@drawable/button_selector" android:layout_weight="1"
+                    android:textColor="@color/btn_footer_text_color" android:paddingLeft="15dp"
+                    android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

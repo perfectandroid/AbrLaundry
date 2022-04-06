@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1"
+
+              android:id="@+id/lnr_cs_main">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp" android:layout_gravity="center_horizontal"
+            android:id="@+id/lnr_cs_header" android:weightSum="2" android:background="@color/head_bg_color">
+        <Button android:layout_width="74dp" android:layout_height="wrap_content"
+                android:id="@+id/btn_cs_back" android:background="@drawable/icon_back"
+                android:textColor="@color/main_btn_text_color"
+                android:layout_marginLeft="10dp" android:layout_marginTop="10dp"
+                android:paddingRight="205dp"/>
+        <Button android:layout_width="33dp" android:layout_height="33dp" android:id="@+id/btn_cs_logo"
+                android:background="@drawable/icon_existing_small" android:layout_marginRight="10dp"
+                android:textColor="@color/main_btn_text_color" android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp" android:layout_marginTop="10dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEARCH CUSTOMER"
+                android:id="@+id/txt_cs_head"
+                android:textStyle="bold" android:textSize="25sp" android:clickable="false"
+                android:editable="false" android:inputType="text"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/head_text_color" android:layout_marginTop="15dp" android:layout_weight="1"
+                android:textIsSelectable="false"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:background="@color/background" android:weightSum="1">
+        <TableLayout
+                android:layout_width="566dp"
+                android:layout_height="wrap_content" android:layout_gravity="center" android:gravity="center_horizontal"
+                android:layout_marginTop="40dp">
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:weightSum="2">
+                <EditText
+                        android:layout_width="500dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/edt_cs_name"
+                        android:hint="Name OR Email OR Mobile" android:textSize="20sp"
+                        android:textColor="@color/txt_text_color"
+                        android:background="@android:drawable/edit_text" android:layout_weight="1"/>
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:id="@+id/btn_cs_search"
+                        android:textSize="20sp" android:background="@drawable/btn_search"
+                        android:textColor="@color/btn_text_color"
+                        android:layout_weight=".58"/>
+            </TableRow>
+        </TableLayout>
+        <TextView
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:text="No customers found !"
+                android:id="@+id/txt_cs_empty_message" android:layout_gravity="center_horizontal"
+                android:textSize="15dp"
+                android:textColor="@color/lbl_txt_color" android:layout_marginTop="10dp" android:visibility="gone"
+                android:layout_weight="1"/>
+        <ListView
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/list_cs_result"
+                android:choiceMode="singleChoice" android:layout_marginTop="30dp" android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp" android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true" android:focusableInTouchMode="true"
+                android:drawSelectorOnTop="true" android:clickable="true" android:smoothScrollbar="true"
+                android:layout_weight="0.45"/>
+    </LinearLayout>
+</LinearLayout>

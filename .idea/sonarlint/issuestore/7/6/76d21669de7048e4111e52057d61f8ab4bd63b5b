@@ -1,0 +1,24 @@
+
+esquid:S1764"KCorrect one of the identical sub-expressions on both sides of operator "||"(é´’şÿÿÿÿ
+Asquid:S3398"'Move this method into "AsyncPrintBill".(åãÎıúÿÿÿÿ
+Isquid:S1066"/Merge this if statement with the enclosing one.(İØÊıÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(íâö·
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(·ÛÃà
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(î€Ç×ûÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(­©öÑ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(‚´«†ûÿÿÿÿ
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(Öß¤É
+Ksquid:S2696"6Make the enclosing method "static" or remove this set.(ò›ã¯
+Psquid:S2696"6Make the enclosing method "static" or remove this set.(üÖ©“üÿÿÿÿ
+@squid:S1481"&Remove this unused "u" local variable.(ú¡¯Åúÿÿÿÿ
+Gsquid:S1481"2Remove this unused "formattedDate" local variable.(í‰ôà
+Vsquid:S1854"ARemove this useless assignment to local variable "formattedDate".(í‰ôà
+Osquid:S1854"5Remove this useless assignment to local variable "u".(ú¡¯Åúÿÿÿÿ
+jsquid:S00116"TRename this field "FONT_TYPE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÑ­ß
+gsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä˜§ó
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ

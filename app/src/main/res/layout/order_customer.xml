@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/lnr_ocust_main"
+              android:weightSum="1">
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                  android:layout_height="70dp" android:id="@+id/lnr_ocust_header"
+                  android:paddingTop="10dp" android:paddingRight="20dp" android:weightSum="1"
+                  android:background="@color/head_bg_color">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btn_ocust_back"
+                android:background="@drawable/icon_back" android:textColor="@color/main_btn_text_color"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+        <Button android:layout_width="33dp" android:layout_height="34dp" android:id="@+id/btn_ocust_logo"
+                android:background="@drawable/icon_cart"
+                android:textColor="@color/main_btn_text_color"
+                android:layout_marginRight="5dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NEW ORDER"
+                  android:id="@+id/textView" android:textStyle="bold" android:textSize="25sp"
+                  android:clickable="false" android:editable="false" android:inputType="date"
+                  android:textColor="@color/head_text_color"
+                  android:textAlignment="center"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:id="@+id/lnr_ocust_content"
+            android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+            android:background="@color/background">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select a customer"
+                android:layout_gravity="center_horizontal" android:textSize="20dp"
+                android:textColor="@color/lbl_txt_color" android:layout_marginBottom="20dp"/>
+        <Button
+                android:layout_width="350dp"
+                android:layout_height="75dp"
+                android:id="@+id/btn_ocust_existing_cust"
+                android:textColor="@color/main_btn_text_color"
+                android:layout_marginBottom="5dp" android:background="@drawable/btn_existing_cust"/>
+        <Button android:layout_width="350dp"
+                android:layout_height="75dp"
+                android:id="@+id/btn_ocust_new_cust"
+                android:textColor="@color/main_btn_text_color"
+                android:background="@drawable/btn_new_cust"
+                android:layout_marginTop="20dp"/>
+
+        <!--<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content" android:gravity="center" android:id="@+id/linearLayout3"-->
+        <!-->-->
+        <!--<TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="P5:Text"-->
+        <!--android:id="@+id/txt_sct20_p5" android:gravity="center_vertical"/>-->
+        <!--<EditText android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+        <!--android:id="@+id/edt_sct20_3" android:layout_gravity="center" android:minWidth="100dp"/>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+</LinearLayout>
+

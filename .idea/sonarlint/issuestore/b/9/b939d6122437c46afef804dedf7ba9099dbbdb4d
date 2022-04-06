@@ -1,0 +1,20 @@
+
+Qsquid:UnusedPrivateMethod".Remove this unused private "fillPrice" method.(‡ÿŠ©
+=squid:S1659"(Declare "edtNo_Bill" on a separate line.(–€âî
+?squid:S1659"*Declare "edtRouteName" on a separate line.(–€âî
+?squid:S1659"*Declare "startBillNum" on a separate line.(–€âî
+:squid:S1659"%Declare "edtcomp" on a separate line.(–€âî
+<squid:S1659"'Declare "edtcomadd" on a separate line.(–€âî
+>squid:S1659")Declare "edtAddress1" on a separate line.(–€âî
+>squid:S1659")Declare "edtAddress2" on a separate line.(–€âî
+Fsquid:S1659"2Declare "switchEnableDiscount" on a separate line.(±ÍN
+Isquid:S1066"/Merge this if statement with the enclosing one.(©‘µ—øÿÿÿÿ
+?squid:S1068"*Remove this unused "config" private field.(‡íØ
+asquid:HiddenFieldCheck"<Rename "settings" which hides the field declared at line 21.(äÓòÆıÿÿÿÿ
+Gsquid:S1481"2Remove this unused "spPriceChange" local variable.(¨¸´ê
+Gsquid:S1481"-Remove this unused "settings" local variable.(äÓòÆıÿÿÿÿ
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(ƒÚ‘éşÿÿÿÿ
+Vsquid:S1854"ARemove this useless assignment to local variable "spPriceChange".(¨¸´ê
+Tsquid:S1854":Remove this useless assignment to local variable "status".(¡û‰àúÿÿÿÿ
+Vsquid:S1854"<Remove this useless assignment to local variable "settings".(äÓòÆıÿÿÿÿ
+ksquid:S00116"URename this field "edtNo_Bill" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–€âî

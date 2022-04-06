@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:gravity="center_vertical" android:baselineAligned="false"
+        android:id="@+id/lnr_hm_main" android:weightSum="3" android:background="@drawable/login">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/lnr_hm_header"
+                  android:paddingTop="10dp" android:paddingRight="20dp" android:weightSum="2"
+                  android:gravity="left" android:paddingLeft="20dp">
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="739dp"
+            android:id="@+id/home_lnr_container" android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:weightSum="1">
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/btn_hm_new_order" android:layout_gravity="center"
+                android:background="@drawable/button_selector_new_order" android:textColor="@color/main_btn_text_color"
+                android:textSize="20dp" android:layout_marginRight="10dp"/>
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/btn_hm_view_order" android:layout_gravity="center"
+                android:background="@drawable/button_selector_my_order"
+                android:textColor="@color/main_btn_text_color" android:textSize="20dp"
+                android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:id="@+id/lnr_hm_footer"
+                  android:paddingRight="20dp" android:layout_gravity="bottom"
+                  android:weightSum="3" android:paddingLeft="20dp" android:gravity="left">
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/textView3"
+                      android:textSize="@dimen/footer_text_size" android:textColor="@color/footer_text_color"
+                      android:layout_weight="1" android:textAlignment="center" android:text="Employee Name"
+                      android:layout_gravity="right" android:gravity="left|right"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_hm_user_name" android:textSize="@dimen/footer_text_size"
+                    android:textColor="@color/footer_text_color" android:layout_weight="1"
+                    android:textAlignment="center" android:text="Guest"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:id="@+id/textView2" android:textSize="@dimen/footer_text_size"
+                      android:textColor="@color/footer_text_color" android:layout_weight="1"
+                      android:textAlignment="center" android:text="Route Name" android:layout_gravity="right"
+                      android:gravity="left|right"/>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:id="@+id/txt_hm_rout" android:textSize="@dimen/footer_text_size"
+                      android:textColor="@color/footer_text_color" android:layout_weight="1" android:textAlignment="center"
+                      android:text="Route" android:hint="Route" android:gravity="center_horizontal|left"/>
+        </TableRow>
+        <!--<TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                      android:id="@+id/textView" android:textSize="@dimen/footer_text_size"
+                      android:textColor="@color/footer_text_color" android:layout_weight="1"
+                      android:textAlignment="center" android:text="Date" android:layout_gravity="right"
+                      android:gravity="left|right"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_hm_date" android:textSize="@dimen/footer_text_size"
+                    android:textColor="@color/footer_text_color" android:layout_weight="1" android:textAlignment="center"
+                    android:text="01/01/2014" android:layout_gravity="right" android:gravity="left|right"/>
+        </TableRow>-->
+    </LinearLayout>
+</LinearLayout>

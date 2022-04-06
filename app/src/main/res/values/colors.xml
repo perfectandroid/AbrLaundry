@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#ffe6e5e6</color>
+    <color name="head_text_color">#ffffffff</color>
+    <color name="head_bg_color">#ff79c371</color>
+    <color name="btn_text_color">#ff000000</color>
+    <color name="btn_bg_color">#ffcacaca</color>
+    <color name="txt_bg_color">#ffffffff</color>
+    <color name="txt_text_color">#ff000000</color>
+    <color name="lbl_txt_color">#FF4D4D4D</color>
+    <color name="main_btn_bg_color">#ff454545</color>
+    <color name="main_btn_text_color">#FF4D4D4D</color>
+    <color name="btn_footer_bg_color">#ff07452d</color>
+    <color name="btn_footer_text_color">#ffe6e6e6</color>
+    <color name="list_head_bg_color">#7b08e7ff</color>
+    <color name="list_head_text_color">#ff454545</color>
+    <color name="error_msg_text_color">#ffff5e72</color>
+    <color name="date_picker_bg_color">#ff437085</color>
+    <color name="spinner_bg_color">#ff79c371</color>
+    <color name="pressed_button_background">#45be45</color>
+    <color name="pressed_button_white_background">#ffcacaca</color>
+    <color name="released_button_white_background">#ffffffff</color>
+    <color name="released_button_background">#66cc66</color>
+    <color name="pressed_button_background_login">#7ab505</color>
+    <color name="released_button_background_login">#669900</color>
+    <color name="stroke_white">#ffffffff</color>
+    <color name="footer_text_color">#ff454545</color>
+</resources>

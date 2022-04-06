@@ -1,0 +1,24 @@
+
+bsquid:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ğ›Äúÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÄŸÀŠ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(±şùÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ËåŞñ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ºóôÖıÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¤’¤½
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(õíùÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¼Î³¶
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+Csquid:S1125")Remove the literal "false" boolean value.(ù˜õşÿÿÿÿÿ
+Csquid:S1125")Remove the literal "false" boolean value.(Šæ¼Îøÿÿÿÿ
+>squid:S1125")Remove the literal "false" boolean value.(ªèè
+>squid:S1125")Remove the literal "false" boolean value.(Œœ à
+>squid:S1125")Remove the literal "false" boolean value.(‰”½­
+Hsquid:S1481".Remove this unused "csvwriter" local variable.(ªÜ±Æøÿÿÿÿ
+msquid:S3776"SRefactor this method to reduce its Cognitive Complexity from 104 to the 15 allowed.(ñ£‚Âûÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Osquid:S1161":Add the "@Override" annotation above this method signature(ËĞƒ
+Osquid:S1161":Add the "@Override" annotation above this method signature(ûÙò¿

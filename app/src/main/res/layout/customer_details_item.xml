@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:weightSum="4"
+        android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:showDividers="beginning|middle|end" android:background="#fff6fcff"
+        android:paddingTop="5dp" android:paddingBottom="5dp" android:id="@+id/lnr_cdi_main">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New "
+            android:id="@+id/txt_cdi_name" android:layout_weight="1" android:layout_marginLeft="10dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txt_cdi_address1" android:layout_weight="1" android:layout_marginLeft="5dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txt_cdi_address2" android:layout_weight="1" android:layout_marginLeft="5dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View"
+            android:id="@+id/btn_cdi_view" android:layout_weight=".3"
+            android:background="@drawable/button_selector"/>
+</LinearLayout>

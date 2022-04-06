@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@color/background" android:weightSum="1"
+              android:id="@+id/lnr_st_main">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+            android:id="@+id/lnr_st_header" android:weightSum="3" android:textAlignment="center"
+            android:background="@color/head_bg_color" android:paddingLeft="15dp" android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/btn_st_back" android:background="@drawable/icon_back"
+                android:textColor="@color/main_btn_text_color"
+                android:layout_marginLeft="1dp"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Application Settings"
+                android:id="@+id/txt_st_head"
+                android:textStyle="bold" android:textSize="25sp" android:clickable="false"
+                android:editable="false" android:inputType="date"
+                android:layout_marginTop="5dp" android:textColor="@color/head_text_color"
+                android:textAlignment="center"
+                android:layout_weight="1.45" android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" android:weightSum="2"
+            android:paddingTop="100dp" android:id="@+id/lnr_st_container" android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Route Code"
+                  android:id="@+id/txt_st_route"
+                  android:layout_marginLeft="0dp" android:layout_marginTop="10dp" android:layout_weight="1"
+                  android:layout_gravity="center_vertical" android:textColor="@color/lbl_txt_color"
+                  android:textSize="18dp" android:layout_marginRight="0dp"
+                />
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/edt_st_route"
+                  android:minWidth="150dp" android:maxLines="1"
+                  android:lines="1" android:singleLine="true" android:inputType="numberDecimal|none" android:autoText="true"
+                  android:layout_marginRight="0dp" android:maxLength="30" android:layout_marginLeft="0dp"
+                  android:hint="Route Code" android:background="@android:drawable/edit_text" android:layout_weight="1"
+                  android:layout_gravity="center_horizontal" android:textColor="@color/txt_text_color"
+                />
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Route Name"
+                  android:id="@+id/txt_st_route_name" android:layout_marginLeft="0dp" android:layout_marginTop="10dp"
+                  android:layout_weight="1" android:layout_gravity="center_vertical"
+                  android:textColor="@color/lbl_txt_color" android:textSize="18dp" android:layout_marginRight="0dp"/>
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/edt_st_route_name"
+                  android:minWidth="150dp" android:maxLines="1" android:lines="1" android:singleLine="true"
+                  android:inputType="none" android:autoText="true" android:layout_marginRight="0dp"
+                  android:maxLength="30" android:layout_marginLeft="0dp" android:hint="Route Name"
+                  android:background="@android:drawable/edit_text" android:layout_weight="1"
+                  android:layout_gravity="center_horizontal" android:textColor="@color/txt_text_color"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="No. Of Bills"
+                  android:id="@+id/txt_st_bill_count" android:layout_gravity="center_vertical"
+                  android:layout_marginLeft="0dp" android:layout_marginTop="10dp" android:layout_weight="1"
+                  android:textColor="@color/lbl_txt_color" android:textSize="18dp" android:layout_marginRight="0dp"
+                />
+        <EditText android:layout_width="fill_parent" android:layout_height="fill_parent"
+                  android:id="@+id/edt_st_bill_count"
+                  android:layout_gravity="center" android:minWidth="150dp" android:maxLines="1"
+                  android:lines="1" android:singleLine="true" android:inputType="none|numberDecimal"
+                  android:autoText="true"
+                  android:layout_marginRight="0dp" android:maxLength="4" android:layout_marginLeft="0dp"
+                  android:hint="No. Of Bills" android:background="@android:drawable/edit_text"
+                  android:layout_weight="1" android:textColor="@color/txt_text_color"
+                />
+        <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Start Bill Number"
+                  android:id="@+id/txt_st_page_size" android:layout_gravity="center_vertical"
+                  android:layout_marginLeft="0dp" android:layout_marginTop="10dp" android:layout_weight="1"
+                  android:textColor="@color/lbl_txt_color" android:textSize="18dp" android:layout_marginRight="0dp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/edt_st_page_size"
+            android:layout_gravity="center"
+            android:minWidth="150dp"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:inputType="number|numberDecimal|numberSigned"
+            android:autoText="true"
+            android:layout_marginRight="0dp"
+            android:maxLength="5"
+            android:layout_marginLeft="0dp"
+            android:hint="Start Bill Number, Default is 1"
+            android:background="@android:drawable/edit_text"
+            android:layout_weight="1"
+            android:textColor="@color/txt_text_color"
+            android:numeric="integer|signed|decimal"/>
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Price Change"
+                  android:id="@+id/txt_st_price_change" android:gravity="center_vertical|left"
+                  android:layout_gravity="center_vertical" android:layout_marginLeft="0dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_weight="1" android:textColor="@color/lbl_txt_color" android:layout_marginRight="0dp"
+                  android:layout_marginBottom="3dp"
+                />
+        <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_st_price_change"
+                android:layout_gravity="center"
+                android:spinnerMode="dropdown"
+
+                android:layout_weight="1" android:background="@drawable/dropdown_style"
+                android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:theme="@style/AppTheme"
+                />
+        <Switch
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Enable Settlement"
+                android:id="@+id/switch_st_settlement" android:layout_gravity="center" android:checked="true"
+                android:layout_marginTop="15dp" android:textColor="@color/lbl_txt_color"
+                android:layout_marginLeft="0dp" android:layout_marginRight="0dp"
+                />
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Company Name"
+                  android:id="@+id/txt_st_company_name" android:gravity="center_vertical|left"
+                  android:layout_gravity="center_vertical" android:layout_marginLeft="0dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_weight="1" android:textColor="@color/lbl_txt_color" android:layout_marginRight="0dp"
+                  android:layout_marginBottom="3dp"
+                />
+        <EditText android:layout_width="fill_parent" android:layout_height="fill_parent"
+                  android:id="@+id/edt_company_name" android:layout_gravity="center" android:minWidth="150dp"
+                  android:maxLines="1" android:lines="1" android:singleLine="true"
+                  android:inputType="text|textCapCharacters" android:autoText="true" android:layout_marginRight="0dp"
+                   android:layout_marginLeft="0dp" android:hint="Company Name"
+                  android:background="@android:drawable/edit_text" android:layout_weight="1"
+                  android:textColor="@color/txt_text_color" android:numeric="integer|signed|decimal"/>
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Company Address"
+                  android:id="@+id/txt_st_company_address" android:gravity="center_vertical|left"
+                  android:layout_gravity="center_vertical" android:layout_marginLeft="0dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_weight="1" android:textColor="@color/lbl_txt_color" android:layout_marginRight="0dp"
+                  android:layout_marginBottom="3dp"
+                />
+        <EditText android:layout_width="fill_parent" android:layout_height="fill_parent"
+                  android:id="@+id/edt_company_address" android:layout_gravity="center" android:minWidth="150dp"
+                  android:maxLines="1" android:lines="1" android:singleLine="true"
+                  android:inputType="text|textCapCharacters" android:autoText="true" android:layout_marginRight="0dp"
+                   android:layout_marginLeft="0dp" android:hint="Company Address"
+                  android:background="@android:drawable/edit_text" android:layout_weight="1"
+                  android:textColor="@color/txt_text_color" android:numeric="integer|signed|decimal"/>
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Address1"
+                  android:id="@+id/txt_st_address1" android:gravity="center_vertical|left"
+                  android:layout_gravity="center_vertical" android:layout_marginLeft="0dp"
+                  android:layout_marginTop="20dp" android:layout_weight="1" android:textColor="@color/lbl_txt_color"
+                  android:layout_marginRight="0dp" android:layout_marginBottom="3dp"/>
+        <EditText android:layout_width="fill_parent" android:layout_height="fill_parent"
+                  android:id="@+id/edt_address1" android:layout_gravity="center" android:minWidth="150dp"
+                  android:maxLines="1" android:lines="1" android:singleLine="true"
+                  android:inputType="text|textCapCharacters" android:autoText="true" android:layout_marginRight="0dp"
+                  android:layout_marginLeft="0dp" android:hint="Address1"
+                  android:background="@android:drawable/edit_text" android:layout_weight="1"
+                  android:textColor="@color/txt_text_color" android:numeric="integer|signed|decimal"/>
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Address2"
+                  android:id="@+id/txt_st_address2" android:gravity="center_vertical|left"
+                  android:layout_gravity="center_vertical" android:layout_marginLeft="0dp"
+                  android:layout_marginTop="20dp" android:layout_weight="1" android:textColor="@color/lbl_txt_color"
+                  android:layout_marginRight="0dp" android:layout_marginBottom="3dp"/>
+        <EditText android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/edt_address2"
+                  android:layout_gravity="center" android:minWidth="150dp" android:maxLines="1" android:lines="1"
+                  android:singleLine="true" android:inputType="text|textCapCharacters" android:autoText="true"
+                  android:layout_marginRight="0dp" android:layout_marginLeft="0dp" android:hint="Address2"
+                  android:background="@android:drawable/edit_text" android:layout_weight="1"
+                  android:textColor="@color/txt_text_color" android:numeric="integer|signed|decimal"/>
+        <Switch android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Enable Discount"
+                android:id="@+id/switch_st_discount" android:layout_gravity="center" android:checked="true"
+                android:layout_marginTop="15dp" android:textColor="@color/lbl_txt_color" android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp" android:visibility="invisible"/>
+        <Button android:layout_width="350dp" android:layout_height="wrap_content"
+                android:id="@+id/btn_st_save" android:layout_gravity="center"
+                android:layout_marginTop="20dp" android:textSize="20sp" android:background="@drawable/button_selector"
+                android:textColor="@color/btn_text_color" android:textStyle="normal" android:text="Save"
+                android:layout_marginRight="0dp" android:layout_marginLeft="0dp"
+                />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\vishnu\working copy\AbrLaundry\app\libs\opencsv-3.1.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="100f1f66bcade989c73eabd3d56ac39df47317df">
+        <dex dex="E:\vishnu\working copy\AbrLaundry\app\build\intermediates\transforms\preDex\release\1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vishnu\.gradle\caches\transforms-1\files-1.1\android.joda-2.9.9.1.aar\0dca8a4055ccd3d72d7f226eacd58d6a\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fedb232bc39709de1f818e3282dccafbeae0f14d">
+        <dex dex="E:\vishnu\working copy\AbrLaundry\app\build\intermediates\transforms\preDex\release\2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\vishnu\.gradle\caches\modules-2\files-2.1\joda-time\joda-time\2.9.9\1d2a6ee94f2fcaa2e2b588cbd5a4da1cb1f1b9ff\joda-time-2.9.9-no-tzdb.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1d2a6ee94f2fcaa2e2b588cbd5a4da1cb1f1b9ff">
+        <dex dex="E:\vishnu\working copy\AbrLaundry\app\build\intermediates\transforms\preDex\release\3.jar" />
+    </item>
+
+</items>

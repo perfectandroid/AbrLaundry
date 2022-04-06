@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+        applicationId "com.example.lms"
+        minSdkVersion 14
+        targetSdkVersion 28
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    lintOptions {
+        disable "ResourceType"
+    }
+}
+
+dependencies {
+    compile files('libs/opencsv-3.1.jar')
+    compile 'net.danlew:android.joda:2.9.9.1'
+}

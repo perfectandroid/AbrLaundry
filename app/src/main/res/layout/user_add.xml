@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:background="@color/background"
+                android:layout_height="fill_parent"
+                android:id="@+id/rlv_ua_main"
+                android:weightSum="1">
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="70dp" android:layout_gravity="center_horizontal"
+                  android:id="@+id/lnr_hm_header" android:weightSum="2" android:background="@color/head_bg_color"
+                  android:layout_marginLeft="0dp" android:layout_marginTop="0dp" android:layout_marginRight="0dp"
+                  android:layout_marginBottom="0dp" android:paddingLeft="15dp" android:paddingTop="15dp"
+                  android:paddingRight="15dp" android:paddingBottom="15dp">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btn_ua_back"
+                android:background="@drawable/icon_back"
+                android:textColor="@color/main_btn_text_color"
+                android:layout_gravity="center"/>
+        <TextView android:layout_width="0dp" android:layout_height="40dp"
+                  android:text="USER SETTINGS" android:id="@+id/txt_ua_head" android:textStyle="bold"
+                  android:textSize="25sp" android:clickable="false" android:editable="false" android:inputType="date"
+                  android:layout_weight="1" android:textColor="@color/head_text_color"
+                  android:gravity="center_vertical"
+                  android:layout_gravity="center"
+                  android:paddingLeft="15dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:weightSum="2" android:id="@+id/lnr_us_contain"
+            android:layout_below="@+id/lnr_hm_header" android:layout_centerHorizontal="true"
+            android:background="@color/background" android:paddingTop="45dp" android:layout_marginBottom="40dp">
+
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:id="@+id/txt_ua_name"
+                android:gravity="center_vertical|left"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/lbl_txt_color"/>
+        <EditText android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/edt_ua_name"
+                  android:layout_gravity="center_vertical|left"
+                  android:minWidth="150dp"
+                  android:maxLines="1" android:lines="1" android:singleLine="true" android:inputType="none"
+                  android:autoText="true" android:layout_marginRight="30dp"
+                  android:maxLength="30" android:layout_marginLeft="30dp" android:hint="Name"
+                  android:background="@android:drawable/edit_text" android:textColor="@color/txt_text_color"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="User code"
+                android:id="@+id/txt_ua_user_code" android:gravity="center_vertical|left"
+                android:layout_gravity="left" android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp" android:textColor="@color/lbl_txt_color"/>
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:id="@+id/edt_ua_user_code" android:layout_gravity="center_vertical|left"
+                  android:minWidth="150dp"
+                  android:maxLines="1" android:lines="1" android:singleLine="true" android:inputType="none"
+                  android:autoText="true" android:layout_marginRight="30dp"
+                  android:maxLength="30" android:layout_marginLeft="30dp" android:hint="User code"
+                  android:background="@android:drawable/edit_text" android:textColor="@color/txt_text_color"/>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Pincode"
+                android:id="@+id/txt_ua_pincode" android:gravity="center_vertical|left"
+                android:layout_gravity="left" android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp" android:textColor="@color/lbl_txt_color"/>
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:id="@+id/edt_ua_pincode" android:layout_gravity="center_vertical|left"
+                  android:minWidth="150dp"
+                  android:maxLines="1" android:lines="1" android:singleLine="true"
+                  android:inputType="none|numberDecimal"
+                  android:autoText="true" android:layout_marginRight="30dp"
+                  android:maxLength="4" android:layout_marginLeft="30dp" android:hint="Pin code"
+                  android:background="@android:drawable/edit_text" android:textColor="@color/txt_text_color"
+                  android:numeric="decimal"/>
+
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:id="@+id/txt_ua_error" android:layout_gravity="center_horizontal"
+                  android:layout_marginTop="5dp" android:textColor="@color/error_msg_text_color"/>
+
+        <Switch android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:text="Bill Cancellation" android:id="@+id/switch_ua_bill_cancalation"
+                android:checked="false" android:layout_marginTop="15dp" android:textColor="@color/lbl_txt_color"
+                android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:textSize="20dp"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:id="@+id/btn_ua_register" android:layout_gravity="center" android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="20dp" android:background="@drawable/button_selector"
+                android:layout_marginLeft="40dp" android:layout_marginRight="40dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

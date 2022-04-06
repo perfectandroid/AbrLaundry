@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="#ff307341" android:weightSum="2">
+
+    <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar_bt" android:layout_gravity="center_horizontal" android:layout_weight="0.46"
+            android:indeterminate="false" android:max="100" />
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="395dp"
+            android:id="@+id/list_bt_device_list" android:layout_gravity="center_horizontal"
+            />
+    <Button android:layout_width="214dp" android:layout_height="wrap_content" android:text="Refresh"
+            android:id="@+id/btn_bt_refresh" android:textColor="@color/btn_text_color"
+            android:background="@drawable/button_selector"
+            android:layout_gravity="center_horizontal" android:layout_weight="0.63"/>
+</LinearLayout>
